@@ -1,0 +1,125 @@
+// Global Styles
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+// Main Styles
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+
+    &__content {
+        position: relative;
+        width: 375px;
+        height: 812px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30);
+        border-radius: 3rem;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #161616;
+    }
+}
+
+.content{
+    &__notch {
+        width: 200px;
+        height: 2rem;
+        position: absolute;
+        top: 0; 
+        background: #161616;
+        border-radius: 0 0 2rem 2rem;
+        margin: auto;
+        z-index: 2;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(https://images.unsplash.com/photo-1509180580956-6ac3ac2b8ad5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7401c2a928eb4142081c258a3a91501e&auto=format&fit=crop&w=2134&q=80) center center / cover no-repeat;
+        border-radius: 2rem;
+        z-index: -1;
+    }
+
+    &__text {
+        width: 90%;
+        height: 90%;
+        z-index: 3;
+        color:#fff;
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;        
+    }
+}
+
+.text__upper {
+    display: flex;
+    justify-content: space-between;
+
+    .upper {
+        &__title {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.825rem;
+        text-transform: uppercase;
+        letter-spacing: .25rem;
+        margin-left: calc(24px + .25rem);
+        }
+    }
+}
+
+.text__lower {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .lower {
+        &__title {
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 2rem;
+            margin-left: 2rem;
+        }
+
+        &__subtitle {
+            font-size: 0.825rem;
+            text-transform: uppercase;
+            letter-spacing: .5rem;
+            margin-bottom: 4rem;
+            margin-left: .5rem;
+        }
+
+        &__cta {
+            font-size: 0.825rem;
+            text-transform: uppercase;
+            letter-spacing: .25rem;
+            margin-left: .25rem;
+        }
+    }
+}
